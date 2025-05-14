@@ -1,0 +1,7 @@
+# ./deployment/docker/Dockerfile.execution
+FROM NEURAL-CRYPTO-2:latest
+
+WORKDIR /app
+
+# Comando específico para o serviço de execução
+CMD ["python", "-m", "src.execution_service.main"]
